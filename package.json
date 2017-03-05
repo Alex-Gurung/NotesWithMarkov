@@ -1,0 +1,25 @@
+{
+  "name": "Notes with Markov",
+  "version": "1.0.0",
+  "description": "Note-taking Electron application with markovchain suggestions from wikipedia",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/Alex-Gurung/NotesWithMarkov",
+  "keywords": [
+    "Electron",
+    "markov",
+    "chain",
+    "wikipedia",
+    "notes"
+  ],
+  "author": "Alex Gurung",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "jquery": "^3.1.1",
+    "markovchain": "^1.0.2",
+    "wtf_wikipedia": "^0.7.1"
+  }
+}

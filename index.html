@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Note App</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/photon.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="window">
+        <header class="toolbar toolbard-header">
+            <h1 class="title">Markov Editor</h1>
+        </header>
+        <div class="window-content">
+            <div class="pane-group">
+                <div class="pane-sm sidebar">
+                    <nav class="nav-group">
+                        <h5 class="nav-group-title">Actions</h5>
+                        <span class="nav-group-item active">
+                            <span class="icon icon-home"></span> Files
+                        </span>
+                        <span class="nav-group-item">
+            <span class="icon icon-download"></span> Downloads
+                        </span>
+                        <span class="nav-group-item">
+            <span class="icon icon-upload"></span>Uploads?</span>
+                    </nav>
+                </div>
+                <div class="pane">
+                    <input id="title" type="text" placeholder="Wikipedia Page(Title)" autofocus>
+                    <span>Updates:</span>
+                    <span id="updates"></span>
+                    <span>Chain:</span>
+                    <span id="chain"></span>
+                    <button class="btn btn-large btn-primary" id="load_button" onclick="load_wiki()">Load Page</button>
+                    <button class="btn btn-large btn-positive" id="load_chain" onclick="load_chain()">Get Chain Manually</button>
+                    <div>
+                        <textarea rows="50" cols="150" id="essay" placeholder="Essay Part"></textarea>
+                        <!-- <input id="essay" type="text" placeholder="Essay Part"> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Javascript -->
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
